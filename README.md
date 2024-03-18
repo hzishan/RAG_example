@@ -84,7 +84,7 @@ question = "請問1999的服務範圍有哪些？"
 print("=========== model_result ================")
 llm.invoke(question)
 ```
-
+### Prompting
 Prompt 的部分還沒搞懂，目前只是根據 [prompt engineering](https://www.promptingguide.ai/) 及 [這篇文章](https://github.com/EgoAlpha/prompt-in-context-learning/blob/main/PromptEngineering.md) 做為參考
 ```
 from langchain.prompts import PromptTemplate
