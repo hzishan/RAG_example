@@ -51,10 +51,7 @@ print(len(query_result))
 persist_directory = 'db-all-MiniLM-L6-v2' 
 vectordb = Chroma.from_documents(documents=all_splits, embedding=embedding_model, persist_directory=persist_directory)
 
-# load from disk
-# docs = Chroma(persist_directory=persist_directory, embedding_function=embedding_model)
 # Testing embedding_model with documents
-
 result = vectordb.similarity_search("question you want to ask")
 print(result[0].page_content)
 ```
